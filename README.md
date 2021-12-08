@@ -6,16 +6,16 @@ Update <b>config.js</b> with Kafka cluster configuration
 
 # Steps to run
 
-run <npm i>
+run command <b>npm i</b>
 
 # To create topic in Kafka
 
-run <node adminClient.js>
+run command <b>node adminClient.js</b>
 
 # Run Producer
 
-run command <node producer.js>
+run command <b>node producer.js</b>
 
 # Run Consumer
 
-run command <node consumer.js>
+run command <b>node consumer.js</b>
