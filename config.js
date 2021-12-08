@@ -1,13 +1,13 @@
 const config = {
-    server: 'pkc-4r297.europe-west1.gcp.confluent.cloud:9092',
+    server: '<host:port>',
     sasl: {
         mechanism: 'plain', // scram-sha-256 or scram-sha-512
-        username: 'A67HUGAGJ7M63HWQ',
-        password: 'YWvgHlyKujY6nOL1O9EgxeokO9HcSwjTWTgQei5InzhxCWLs6oA/DFaoqlsdlwnu'
+        username: '<cluster api key>',
+        password: '<cluster api secret>'
       },
     ssl: true,
-    topic: 'kafka-poc',
-    groupId:'test-group',
+    topic: '<topic>',
+    groupId:'<groupId>',
     numPartitions: 1
 }
 
