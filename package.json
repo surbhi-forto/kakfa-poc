@@ -1,0 +1,22 @@
+{
+  "name": "kakfa-poc",
+  "version": "1.0.0",
+  "description": "a microservice to show pull mechanism using kafka producer and consumer",
+  "main": "client.js",
+  "scripts": {
+    "test": "node client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surbhi-forto/kakfa-poc.git"
+  },
+  "author": "surbhi singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surbhi-forto/kakfa-poc/issues"
+  },
+  "homepage": "https://github.com/surbhi-forto/kakfa-poc#readme",
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  }
+}
