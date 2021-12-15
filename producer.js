@@ -8,7 +8,7 @@ const kafkaProducer = async () => {
     await producer.send({
         topic: config.topic,
         messages: [
-            { value: 'Hello KafkaJS user!' },
+            { name: 'Surbhi', age:27, rollno: 30 },
         ],
     })
 

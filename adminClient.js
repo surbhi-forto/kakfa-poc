@@ -10,13 +10,14 @@ const adminClient = async () => {
         topics: [{
             topic: config.topic,
             numPartitions: config.numPartitions
-        }]
+        }],
+        waitForLeaders: true,
     })
     await admin.disconnect()
 }
 
 adminClient()
     .catch((err) => {
-        console.error(`Something went wrong:\n${err}`);
+        console.error(`Something  went wrong:\n${err}`);
         process.exit(1);
 });
