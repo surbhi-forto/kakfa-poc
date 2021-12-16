@@ -8,7 +8,7 @@ const kafkaProducer = async () => {
     await producer.send({
         topic: config.topic,
         messages: [
-            { name: 'Surbhi', age:27, rollno: 30 },
+            { value: JSON.stringify({ name: 'Surbhi', age:27, rollno: 30}) },
         ],
     })
 

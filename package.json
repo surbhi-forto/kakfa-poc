@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/surbhi-forto/kakfa-poc#readme",
   "dependencies": {
+    "kafka-streams": "^5.0.0",
     "kafkajs": "^1.15.0"
   }
 }
