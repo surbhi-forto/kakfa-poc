@@ -28,7 +28,7 @@ const kafkaStreams = new KafkaStreams({
         "fetch.wait.max.ms": 1000,
         "queue.buffering.max.ms": 1000,
         "batch.num.messages": 10000,
-        "security.protocol":"ssl",
+        "security.protocol":"SASL_SSL",
         'broker.version.fallback': '0.10.2.1',
         'log.connection.close' : false
     },
