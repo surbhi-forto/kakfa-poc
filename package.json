@@ -18,6 +18,8 @@
   "homepage": "https://github.com/surbhi-forto/kakfa-poc#readme",
   "dependencies": {
     "kafka-streams": "^5.0.0",
-    "kafkajs": "^1.15.0"
+    "kafkajs": "^1.15.0",
+    "node-rdkafka": "^2.12.0",
+    "sinek": "^10.0.0-alpha.0"
   }
 }

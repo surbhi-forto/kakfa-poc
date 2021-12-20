@@ -8,7 +8,8 @@ const config = {
     ssl: true,
     topic: 'kafka-poc',
     groupId:'test-group',
-    numPartitions: 1
+    numPartitions: 1,
+    clientId: 'kafka-streams-test-name-native'
 }
 
 module.exports = config
