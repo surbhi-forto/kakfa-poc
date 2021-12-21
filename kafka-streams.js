@@ -49,7 +49,7 @@ kafkaStreams.on("error", (error) => console.error(error));
 
 const stream = kafkaStreams.getKStream(kafkaTopicName);
 
-stream.forEach(message => console.log(message,'pppppppp'));
+stream.forEach(message => console.log(message.value.toString("utf8"),'pppppppp'));
 
 
 stream.start().then(() => {
