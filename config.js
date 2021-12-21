@@ -9,7 +9,8 @@ const config = {
     topic: 'kafka-poc',
     groupId:'test-group',
     numPartitions: 1,
-    clientId: 'kafkajs'
+    clientId: 'kafkajs',
+    protocol: 'SASL_SSL'
 }
 
 module.exports = config
