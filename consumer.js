@@ -5,13 +5,13 @@ const consumer = kafka.consumer({ groupId: config.groupId })
 // Consumer can consume new events from the topic
 const kafkaConsumer = async () => {
     await consumer.connect()
-    await consumer.subscribe({ topic: config.topic, fromBeginning: true })
+    await consumer.subscribe({ topic: 'kafka-poc-1', fromBeginning: true })
 
     await consumer.run({
         eachMessage: async ({ topic, partition, message }) => {
             console.log({
                 value: message.value.toString(),
-            })
+            }, partition, topic)
         },
     })
 }

@@ -6,9 +6,12 @@ const producer = kafka.producer()
 const kafkaProducer = async () => {
     await producer.connect()
     await producer.send({
-        topic: config.topic,
+        topic: 'kafka-poc',
         messages: [
-            { value: JSON.stringify({ name: 'Surbhi', age:27, rollno: 30}) },
+            { 
+                key: '1',
+                value: JSON.stringify({ name: 'Surbhi', age:27, rollno: 40, education: 'B.Tech'}) 
+            },
         ],
     })
 
